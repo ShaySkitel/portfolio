@@ -52,7 +52,8 @@ function setModalDetails(project) {
       <li>Date: ${new Date(project.publishedAt*1000)}</li>
       <li>Categories: ${project.labels.join(', ')}</li>
     </ul>
-    <button class="btn btn-primary" data-dismiss="modal" type="button">
+    <a href="${project.url}" target="_blank" class="btn btn-primary">Open project in a new tab</a>
+    <button class="btn btn-danger" data-dismiss="modal" type="button">
         <i class="fa fa-times"></i>
         Close Project
     </button>

@@ -354,6 +354,14 @@ header.masthead .intro-text .intro-heading {
 .portfolio-modal .modal-content button, button {
     cursor: pointer;
 }
+.modal-content button, .modal-content a {
+    color: #222222;
+    margin-bottom: 1rem;
+}
+.modal-content button {
+    font-weight: bold;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 .portfolio-modal .close-modal {
     position: absolute;
     top: 25px;
@@ -588,6 +596,9 @@ header.masthead .intro-text .intro-heading {
         text-align: center;
         margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+    .portfolio-modal .modal-content h2 {
+        font-size: 2rem;
     }
 }
 footer {
