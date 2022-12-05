@@ -1,6 +1,7 @@
 'use strict'
 
 $(document).ready(onInit)
+$('.contact-form button').on('click', onSendEmail)
 
 function onInit() {
     console.log('Starting up');
@@ -56,4 +57,21 @@ function setModalDetails(project) {
         Close Project
     </button>
         `)
+}
+
+function onSendEmail(){
+    const email = $('.contact-form input[type="email"]').val()
+    const subject = $('.contact-form input[type="text"]').val()
+    const msgBody = $('.contact-form textarea').val()
+    if(!email || !subject || !msgBody) {
+        alert('One or more fields are missing')
+        return
+    }
+    const emailFormat = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/
+    if(!email.match(emailFormat)) {
+        alert('Please enter a valid email')
+        return
+    }
+    const newUrlStr = `https://mail.google.com/mail/?view=cm&fs=1&to=shay.skitel@gmail.com&su=${subject}&body=${msgBody}`
+    window.open(newUrlStr, '_blank')
 }

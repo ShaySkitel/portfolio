@@ -84,7 +84,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: red;
+    background: #222222;
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -93,6 +93,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    color: #eee;
+    padding: 0.5rem;
 }
 .offcanvas-aside img {
     border-radius: 50%;
@@ -102,6 +104,10 @@ body {
 }
 .offcanvas-aside .offcanvas-content-suffix {
     height: 20%;
+}
+
+.offcanvas-aside button {
+    color: #222222;
 }
 
 @media (min-width: 575px) {
@@ -345,7 +351,7 @@ header.masthead .intro-text .intro-heading {
 .portfolio-modal .modal-content img {
     margin-bottom: 30px;
 }
-.portfolio-modal .modal-content button {
+.portfolio-modal .modal-content button, button {
     cursor: pointer;
 }
 .portfolio-modal .close-modal {
