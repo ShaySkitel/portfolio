@@ -4,7 +4,6 @@ $(document).ready(onInit)
 $('.contact-form button').on('click', onSendEmail)
 
 function onInit() {
-    console.log('Starting up');
     renderProjects()
 }
 
@@ -32,7 +31,6 @@ function renderProjects() {
     }).join('')
 
     $('.portfolio-item').each(function () {
-        console.log('this:', this)
         const el = this
         el.addEventListener('click', () => {
             const project = getProjectById(el.dataset.projId)
