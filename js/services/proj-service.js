@@ -2,6 +2,24 @@
 
 const gProjects = [
     {
+        id: "trellofy",
+        name: "Trellofy",
+        title: "Trello clone with extra features",
+        desc: "My fullstack Trello clone with extra features, using the MERN stack",
+        url: "https://trellofy.onrender.com/",
+        publishedAt: 1675078459,
+        labels: ["Fullstack", "MVC", "MERN", "Authentication", "Authorization", "State management"]
+    },
+    {
+        id: "meem",
+        name: "Meem",
+        title: "My meme generation tool",
+        desc: "A meme generator which allows you to even upload your own pictures",
+        url: "https://shayskitel.github.io/Meem/",
+        publishedAt: 1671363259,
+        labels: ["LocalStorage", "MVC", "Frontend"]
+    },
+    {
         id: "minesweeper",
         name: "Minesweeper",
         title: "Don't click the mines!",
@@ -11,15 +29,6 @@ const gProjects = [
         labels: ["Matrixes", "Mouse events"]
     },
     {
-        id: "todo",
-        name: "Todo App",
-        title: "Never forget your daily tasks",
-        desc: "placeholder",
-        url: "https://shayskitel.github.io/Todos/",
-        publishedAt: 1669315611,
-        labels: ["LocalStorage", "MVC"]
-    },
-    {
         id: "ballboard",
         name: "Ballboard",
         title: "Can you collect all the balls?",
@@ -27,15 +36,6 @@ const gProjects = [
         url: "https://shayskitel.github.io/Ballboard/",
         publishedAt: 1669315611,
         labels: ["Matrixes", "Keyboard events", "Mouse events"]
-    },
-    {
-        id: "bookshop",
-        name: "Bookshop",
-        title: "Dashboard for a bookstore",
-        desc: "placeholder",
-        url: "https://shayskitel.github.io/bookshop/",
-        publishedAt: 1669315611,
-        labels: ["LocalStorage", "MVC"]
     },
     {
         id: "guessme",
@@ -57,10 +57,10 @@ const gProjects = [
     }
 ]
 
-function getProjects(){
+function getProjects() {
     return gProjects
 }
 
-function getProjectById(id){
+function getProjectById(id) {
     return gProjects.find(project => project.id === id)
 }

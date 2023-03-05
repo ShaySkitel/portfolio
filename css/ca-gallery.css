@@ -797,6 +797,14 @@ fieldset[disabled] .btn-xl:hover {
     display: none;
 }
 
+.modal {
+    z-index: 5;
+}
+
 .overlay.shown {
     display: block;
+}
+
+.modal-backdrop {
+    display: none;
 }
