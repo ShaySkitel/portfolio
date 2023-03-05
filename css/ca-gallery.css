@@ -620,6 +620,23 @@ footer ul.quicklinks {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
+
+.offcanvas-aside .social-buttons {
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offcanvas-aside .social-buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #fed136;
+    color: #222222;
+}
+
 ul.social-buttons {
     margin-bottom: 0;
 }
